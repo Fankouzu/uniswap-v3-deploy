@@ -12,7 +12,7 @@ import {
   deployContract,
   getContract,
 } from "./script/deployTool";
-import {RPCS} from './script/network'
+import { RPCS } from "./script/network";
 dotenv.config();
 
 task("accounts", "Prints the list of accounts", async (taskArgs, bre) => {
