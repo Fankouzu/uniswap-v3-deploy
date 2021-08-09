@@ -11,6 +11,7 @@ import {
   compileSetting,
   deployContract,
   getContract,
+  mainTokenName,
 } from "./script/deployTool";
 import { RPCS } from "./script/network";
 dotenv.config();
@@ -184,7 +185,7 @@ task("deployV3", "deploy V3 contracts")
       network.name,
       ethers.getContractFactory,
       signer,
-      [weth9],
+      [weth9,mainTokenName[network.name]],
       {
         "contracts/NonfungibleTokenPositionDescriptor/NFTDescriptor.sol:NFTDescriptor":
           NFTDescriptor.address,

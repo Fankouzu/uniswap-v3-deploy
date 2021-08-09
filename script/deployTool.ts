@@ -11,7 +11,48 @@ export const allowVerifyChain = [
   "bscmain",
   "hecotest",
   "hecomain",
+  "maticmain",
+  "ftmtest",
+  "ftmmain",
+  "hoomain",
 ];
+
+type AddressMap = { [name: string]: string };
+
+export const mainTokenName: AddressMap = {
+  hardhat: "ETH",
+  ropsten: "ETH",
+  rinkeby: "ETH",
+  goerli: "ETH",
+  kovan: "ETH",
+  bsctest: "BNB",
+  bscmain: "BNB",
+  hecotest: "HT",
+  hecomain: "HT",
+  mtrtest: "MTR",
+  mtrmain: "MTR",
+  clvtest: "CLV",
+  clvmain: "CLV",
+  haicmain: "HAIC",
+  galtmain: "GALT",
+  coinextest: "CET",
+  coinexmain: "CET",
+  maticmain: "MATIC",
+  matictest: "MATIC",
+  ftmtest: "FTM",
+  ftmmain: "FTM",
+  hootest: "HOO",
+  hoomain: "HOO",
+  oktest: "OKT",
+  xdai: "XDAI",
+  harmonymain: "ONE",
+  harmonytest: "ONE",
+  avaxtest: "AVAX",
+  avaxmain: "AVAX",
+  celotest: "CELO",
+  celomain: "CELO",
+  moonbeamtest: "DEV"
+};
 
 export function compileSetting(version: string, runs: number) {
   return {

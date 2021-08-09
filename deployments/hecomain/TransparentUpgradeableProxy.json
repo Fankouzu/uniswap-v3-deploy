@@ -1,1 +1,0 @@
-{"address":"0xAFfe8B72a29A28999a472a056374d8B8607e4347","constructorArguments":["0x0C4CCda8e0eCeB0ef3B2477f9bF6751CF52Be7b9","0x91CA6F77Bd05dc47bfA313341f891E0a1724892F","0x"],"libraries":{},"contract":"contracts/TransparentUpgradeableProxy/TransparentUpgradeableProxy.sol:TransparentUpgradeableProxy"}
