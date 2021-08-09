@@ -183,6 +183,14 @@ export const RPCS = {
 			mnemonic: process.env.MNEMONIC
 		}
 	},
+	okmain: {
+		url: `https://exchainrpc.okex.org`,
+		chainId: 66,
+		gasPrice: 100000000,
+		accounts: {
+			mnemonic: process.env.MNEMONIC
+		}
+	},
 	xdai: {
 		url: `https://rpc.xdaichain.com`,
 		chainId: 100,

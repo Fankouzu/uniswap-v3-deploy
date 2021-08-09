@@ -42,8 +42,8 @@ task("getHash", "Get INIT_CODE_HASH").setAction(
     const COMPUTED_V2_INIT_CODE_HASH = keccak256(["bytes"], [v2bytecode]);
     const COMPUTED_V3_INIT_CODE_HASH = keccak256(["bytes"], [v3bytecode]);
 
-    console.log("COMPUTED_V2_INIT_CODE_HASH:", COMPUTED_V2_INIT_CODE_HASH);
-    console.log("COMPUTED_V3_INIT_CODE_HASH:", COMPUTED_V3_INIT_CODE_HASH);
+    console.log("COMPUTED_V2_INIT_CODE_PAIR_HASH:", COMPUTED_V2_INIT_CODE_HASH);
+    console.log("COMPUTED_V3_POOL_INIT_CODE_HASH:", COMPUTED_V3_INIT_CODE_HASH);
 
     const v2contract = await v2factory.deploy(signer.address);
     const v3contract = await v3factory.deploy();
