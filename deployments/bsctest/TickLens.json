@@ -1,0 +1,1 @@
+{"address":"0xb78AAc38F1dc8E4aA244A196085011d7931E087d","abi":["function getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) view returns (tuple(int24 tick, int128 liquidityNet, uint128 liquidityGross)[] populatedTicks) @11450000"]}
